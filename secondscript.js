@@ -16,8 +16,8 @@ var hutjestekst = document.getElementById('huttekst');
 var glowbird = document.querySelector('.vogelglow');
 var glowvis = document.querySelector('.visglow');
 var glowhuis = document.querySelector('.hutglow');
-// var vogelsound = document.querySelector('.vogeltje');
-// var audio = document.getElementById('audio');
+var vogelsound = document.querySelector('.vogeltje');
+// var audio = document.querySelector('.geluid');
 
 spelen.addEventListener("click", function(){
   intro.classList.toggle('introaan')
@@ -47,11 +47,20 @@ bolhut.addEventListener("click", function(){
   glowhuis.classList.toggle('glowaan')
 });
 
-// vogelsound.addEventListener("click", function (){
-//   audio.play();
-// });
-
-// function play(){
-//        var audio = document.getElementById("audio");
+// function myPlay(){
+//        var audio = new Audio("Styles/vogelgeluid.mp3");
 //        audio.play();
-//                  }
+// }
+//
+// var promise = document.querySelector('.geluid').play();
+//
+// if (promise !== undefined) {
+//   promise.then(_ => {
+//     promise.play();
+//   }).catch(error => {
+//     console.log(hoi)
+//   });
+//
+// }
+//
+// bolbird.addEventListener("onclick", myPlay());
