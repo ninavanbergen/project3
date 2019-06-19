@@ -1,0 +1,289 @@
+body {
+  background-color: rgb(158, 206, 202);
+}
+
+nav {
+  background-color: white;
+  width: 11rem;
+  height: 20vh;
+  margin-top: -4rem;
+  margin-left: -0.5rem;
+  opacity: 0;
+  position: fixed;
+  padding-top: 10rem;
+  font-family: 'Bree lt';
+  z-index: 2;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  padding-bottom: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  color: #df5b57;
+}
+
+
+.menuopen {
+  opacity: 1;
+  transition: 1s ease-in;
+}
+
+.logo {
+  background-color: white;
+  width: 15rem;
+  text-align: center;
+  box-shadow: 1px 1px 5px black;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+  transition: 0.2s ease-in-out;
+}
+
+.logo img {
+  width: 12rem;
+  padding: 1rem;
+}
+
+.wereldkaart {
+  width: 150%;
+  margin-top: -30rem;
+  position: absolute;
+  z-index: 0;
+}
+
+.locatiepunt {
+  width: 2rem;
+  margin-top: 45rem;
+  margin-left: 45rem;
+  position: absolute;
+  z-index: 1;
+  animation: bounce 4s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.2);
+  }
+  20%{
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.locatiepunt:hover  {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.locatiepunt:first-of-type {
+  margin-top: 13rem;
+  margin-left: 61rem;
+}
+
+.locatiepunt:nth-of-type(2){
+  margin-top: 37rem;
+  margin-left: 35rem;
+}
+
+.locatiepunt:nth-of-type(3){
+  margin-top: 16rem;
+  margin-left: 69rem;
+}
+
+.locatiepunt:nth-of-type(4){
+  margin-top: 18.5rem;
+  margin-left: 67rem;
+}
+
+.popup {
+  background-color: white;
+  width: 14rem;
+  color: black;
+  font-family: 'Bree lt';
+  font-weight: 300;
+  font-size: 15px;
+  padding: 1rem;
+  margin-left: 40rem;
+  margin-top: 25rem;
+  position: absolute;
+  z-index: 2;
+  height: 47vh;
+  display: none;
+}
+
+.popup h2 {
+  font-weight: 800;
+  margin-left: 1rem;
+}
+
+#arlet {
+  margin-top: -3rem;
+  position: absolute;
+}
+
+#ken {
+  margin-top: 0.6rem;
+  position: absolute;
+}
+
+#kak {
+  margin-top: 4.2rem;
+  position: absolute;
+}
+
+#kassa {
+  margin-top: 7.8rem;
+  position: absolute;
+}
+
+.popaan {
+  display: block;
+  animation: zweven 3s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zweven {
+  0% {
+    transform: translate(0, 0.5vw);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0.5vw);
+
+  }
+}
+
+.popup p {
+  margin-bottom: 5rem;
+  margin-left: 1rem;
+  width: 10rem;
+}
+
+.knopje {
+  background-color: white;
+  box-shadow: 0.1px 0.1px 1px #df5b57;
+  text-decoration: none;
+  color: black;
+  font-family: 'Bree lt';
+  padding: 1rem;
+  text-align: left;
+  padding-left: 4rem;
+  margin: 1rem;
+  width: 7rem;
+  margin-left: 1rem;
+}
+
+.knopje:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-in;
+  text-align: left;
+  justify-content: center;
+  font-size: 17px;
+  z-index: 3;
+  background-color: #df5b57;
+}
+
+.map h2 {
+  font-family: 'Bree lt';
+  font-weight: 800;
+}
+
+.map {
+  background-color: white;
+  color: black;
+  font-family: 'Georgia serif';
+  font-weight: 300;
+  font-size: 17px;
+  width: 15rem;
+  padding: 1rem;
+  padding-left: 1.8rem;
+  margin-top: 33rem;
+  margin-left: 2rem;
+  position: fixed;
+  z-index: 3;
+  animation: zweven 3s ease-in-out;
+  animation-iteration-count: infinite;
+  line-height: 1.4rem;
+}
+
+@keyframes zweven {
+  0% {
+    transform: translate(0, 0.3vw);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0.3vw);
+
+  }
+}
+
+.popup img {
+  width: 3rem;
+  position: absolute;
+  z-index: 5;
+}
+
+.popup img:first-of-type {
+  margin-top: -2.9rem;
+  margin-left: 1.5rem;
+}
+
+.popup img:nth-of-type(2){
+  margin-top: 0.8rem;
+  margin-left: 1.5rem;
+}
+
+.popup img:nth-of-type(3){
+  margin-top: 4.4rem;
+  margin-left: 1.5rem;
+}
+
+.popup img:last-of-type {
+  margin-top: 8rem;
+  margin-left: 1.5rem;
+}
